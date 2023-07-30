@@ -1,0 +1,22 @@
+{
+  "name": "tall-pdf-calendar",
+  "version": "1.0.0",
+  "description": "Learn how to use serverless functions in less than 30 minutes!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/macdermott/tall-pdf-calendar.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/macdermott/tall-pdf-calendar/issues"
+  },
+  "homepage": "https://github.com/macdermott/tall-pdf-calendar#readme",
+  "dependencies": {
+    "pdf-lib": "^1.17.1"
+  }
+}
