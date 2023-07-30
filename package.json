@@ -1,21 +1,14 @@
 {
   "name": "tall-pdf-calendar",
   "version": "1.0.0",
-  "description": "Learn how to use serverless functions in less than 30 minutes!",
+  "description": "Netlify serverless function to generate printable PDF calendar",
+  "author": "macdermott",
+  "license": "ISC",
+  "homepage": "tall-pdf-calendar.netlify.app",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "netlify functions:serve"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/macdermott/tall-pdf-calendar.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/macdermott/tall-pdf-calendar/issues"
-  },
-  "homepage": "https://github.com/macdermott/tall-pdf-calendar#readme",
   "dependencies": {
     "pdf-lib": "^1.17.1"
   }
