@@ -1,7 +1,7 @@
 import { Handler } from "@netlify/functions";
-import { PDFDocument } from "pdf-lib";
+import { generatePdf } from "./generatePdf";
 
-export const handler: Handler = async (event) => {
+export const handler: Handler = async (event, context) => {
   const today = new Date();
   const month = event?.queryStringParameters?.month
     ? parseInt(event?.queryStringParameters.month)
@@ -18,10 +18,7 @@ export const handler: Handler = async (event) => {
       }),
     };
   }
-
-  const pdfDoc = await PDFDocument.create();
-  const page = pdfDoc.addPage();
-  page.drawText("You can create PDFs!");
+  const pdfDoc = await generatePdf(month, year);
   const pdfBytes = await pdfDoc.saveAsBase64();
 
   return {
